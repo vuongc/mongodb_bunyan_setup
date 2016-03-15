@@ -6,5 +6,8 @@
 ## Install
 * npm install
 
+## Configuration
+* Set database configuration in ./config/database.js
+
 ## Usage
 * npm start

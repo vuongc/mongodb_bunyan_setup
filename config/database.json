@@ -1,0 +1,8 @@
+{
+  "devDatabase": {
+    "secret": "myssecret",
+    "url": "localhost/database",
+    "username": "dev",
+    "password": "dev"
+  }
+}
