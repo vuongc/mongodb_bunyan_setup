@@ -7,10 +7,10 @@ module.exports = mongoose.model('Log', new Schema({
   hostname:  String,
   pid:       Number,
   author_id: String,
-  body:      String,
   level:     String,
   err:       Object,
-  date:    { type: Date, default: Date.now },
+  msg:       String,
+  time:    { type: Date, default: Date.now },
   v:         Number,
 }, {
   autoIndex: true,
