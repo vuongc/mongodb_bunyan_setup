@@ -1,5 +1,8 @@
 const bunyan = require('bunyan');
 
+// Require log configuration file
+const config = require('../config/log.json');
+
 // Init bunyan logger
 const logger = bunyan.createLogger({
   name: 'SAM-Solution',
@@ -9,8 +12,8 @@ const logger = bunyan.createLogger({
       stream: process.stdout,
     },
     {
-      level: 'warn',
-      path: './SAM-Solution-error.log',
+      level: config.level,
+      path: config.path,
     },
   ],
 });
