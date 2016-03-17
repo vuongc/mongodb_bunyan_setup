@@ -19,6 +19,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Load routes
 var router = require('./routes/index')(app);
 
+// Get database instance
 var database = require('./libs/database')(config.devDatabase);
 
 // Create server
